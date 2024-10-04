@@ -45,7 +45,7 @@ alist style adjustments and beautifications, all subjective adjustments. If by c
 `alist`管理后台自定义头部引入：
 
 ```js
-<link href="https://cdn.jsdelivr.net/gh/kasuie/alist-customize@main/v3/css/index.min.css" rel="stylesheet" type="text/css" />
+<link href="https://cdn.jsdelivr.net/gh/izumiChan16/alist-customize@main/v3/css/index.min.css" rel="stylesheet" type="text/css" />
 ```
 
 - `index.js`： 主要是一些对页面 Dom 元素的操作和样式调整，目前支持自定义页面下方的`footer`，需要在`alist`后台管理自定义内容中添加一段描述 footer 的文本，`js`自动加载渲染到页面，例如：
@@ -59,7 +59,7 @@ alist style adjustments and beautifications, all subjective adjustments. If by c
     ]
 <div>
 
-<script src="https://cdn.jsdelivr.net/gh/kasuie/alist-customize@main/v3/js/index.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/izumiChan16/alist-customize@main/v3/js/index.min.js"></script>
 ```
 
 以上就会生成三个 a 标签放置在底部：![alt text](preview/image.png)
