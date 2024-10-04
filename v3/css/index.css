@@ -242,7 +242,6 @@ div#root div.body svg {
 div#root div.footer {
   opacity: 0;
   transition: opacity 0.5s ease;
-  pointer-events: none; /* 禁止鼠标事件 */
 }
 
 div#root div.footer:hover {
