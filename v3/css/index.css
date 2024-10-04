@@ -249,6 +249,16 @@ div#root div.footer:hover {
   pointer-events: auto; /* 允许鼠标事件 */
 }
 
+#root > div.footer.hope-stack {
+  position: fixed;
+  bottom: 0;
+  left: 0; /* 根据需要调整 */
+  right: 0; /* 根据需要调整 */
+  width: 100%; /* 根据需要调整 */
+  z-index: 1000; /* 确保在最前 */
+}
+
+
 /**工具栏*/
 div.left-toolbar-box,
 div.center-toolbar {
