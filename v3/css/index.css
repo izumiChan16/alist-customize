@@ -243,6 +243,10 @@ div#root div.footer {
   display: none;
 }
 
+div#root div.footer:hover {
+  display: block;
+}
+
 /**工具栏*/
 div.left-toolbar-box,
 div.center-toolbar {
