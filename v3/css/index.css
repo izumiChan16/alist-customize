@@ -240,11 +240,14 @@ div#root div.body svg {
 
 /**底部*/
 div#root div.footer {
-  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none; /* 禁止鼠标事件 */
 }
 
 div#root div.footer:hover {
-  display: block;
+  opacity: 1;
+  pointer-events: auto; /* 允许鼠标事件 */
 }
 
 /**工具栏*/
