@@ -238,16 +238,39 @@ div#root div.body svg {
   color: rgba(var(--mio-primary));
 }
 
-/**底部*/
-div#root div.footer {
-  opacity: 0;
-  transition: opacity 0.5s ease;
+/* 大屏幕设备上的 CSS */
+@media (min-width: 768px) {
+    div#root div.footer {
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    div#root div.footer:hover {
+        opacity: 1;
+        pointer-events: auto; /* 允许鼠标事件 */
+    }
 }
 
-div#root div.footer:hover {
-  opacity: 1;
-  pointer-events: auto; /* 允许鼠标事件 */
+/* 小屏幕设备上的 CSS */
+@media (max-width: 767px) {
+    div#root div.footer {
+        opacity: 0; /* 默认隐藏 */
+        transition: opacity 0.5s ease;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        pointer-events: none; /* 默认不允许鼠标事件 */
+    }
+
+    div#root div.footer.visible {
+        opacity: 1; /* 显示 footer */
+        pointer-events: auto; /* 允许鼠标事件 */
+    }
 }
+
 
 #root > div.footer.hope-stack {
   position: fixed;
