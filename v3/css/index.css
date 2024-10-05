@@ -257,17 +257,7 @@ div#root div.body svg {
 /* 小屏幕设备上的 CSS */
 @media (max-width: 767px) {
     div#root div.footer {
-        opacity: 0; /* 默认隐藏 */
-        transition: opacity 0.5s ease;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        pointer-events: none; /* 默认不允许鼠标事件 */
-    }
-
-    div#root div.footer.visible {
-        opacity: 1; /* 显示 footer */
-        pointer-events: auto; /* 允许鼠标事件 */
+        display: none;
     }
 }
 
